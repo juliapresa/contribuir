@@ -310,7 +310,7 @@ body {
   position: relative;
   color: #1b225f;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 25px;
   transition: color 0.3s;
 }
 
@@ -338,7 +338,7 @@ body {
 .pObjetivo{
     color:  #ffffff;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 25px;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 5vh;
@@ -353,7 +353,7 @@ body {
 
   .question-card {
     flex: 0 1 90%;   /* ocupa todo el ancho */
-    font-size: 20px;
+    font-size: 15px;
     padding: 15px 18px;
     height: 70px;      /* altura fija para todas las cards */
     min-height: 0;     /* sobreescribimos min-height */
@@ -369,7 +369,7 @@ body {
 .pEquipo{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 25px;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 10vw;
@@ -378,7 +378,7 @@ body {
 .tituloEquipo{
     color:  #46ba43;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 55px;
 }
 
 .divCards{
@@ -391,7 +391,7 @@ body {
 }
 .card {
   background-color: #fff;
-  width: 600px;
+  width: 90vw;
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -414,7 +414,7 @@ body {
 }
 
 .card-title {
-  font-size: 32px;
+  font-size: 30px;
   color:  #1b225f;
   margin-bottom: 5px;
 }
@@ -474,14 +474,14 @@ body {
 .pLogoUno{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 .pLogoDos{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 5vw;
@@ -491,5 +491,4 @@ body {
   height: 450px;
   padding-right: 0;
 }
-
 }
