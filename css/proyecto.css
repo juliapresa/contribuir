@@ -428,19 +428,19 @@ main{
 }
 
 .card-title {
-  font-size: 30px;
+  font-size: 25px;
   color:  #1b225f;
   margin-bottom: 5px;
 }
 
 .card-text {
-  font-size: 25px;
+  font-size: 20px;
   color:  #1b225f;
   margin-bottom: 15px;
 }
 
 .extra-info {
-  font-size: 24px;
+  font-size: 19px;
   color:  #1b225f;
   line-height: 1.4;
   display: none;
@@ -454,7 +454,7 @@ main{
   padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 19px;
   transition: background-color 0.3s;
   margin-bottom: 2%;
 }
@@ -471,7 +471,7 @@ main{
 .tituloLogo{
   color:  #46ba43;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 35px;
   padding-left: 0;
 }
 .divParrafosyLogo{
