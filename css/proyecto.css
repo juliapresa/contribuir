@@ -230,6 +230,7 @@ body {
 
 
 .divLogo{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -284,6 +285,12 @@ body {
   font-family: "Monserrat", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* navbar */
@@ -385,7 +392,7 @@ body {
 .tituloEquipo{
     color:  #46ba43;
     font-weight: 800;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 .divCards{
@@ -447,50 +454,51 @@ body {
   padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
   transition: background-color 0.3s;
   margin-bottom: 2%;
 }
 
+.divLogo{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+}
+.tituloLogo{
+  color:  #46ba43;
+  font-weight: 800;
+  font-size: 40px;
+  padding-left: 0;
+}
 .divParrafosyLogo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.divLogo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3vh;
-    margin-bottom: 10vh;
-}
-.tituloLogo{
-    color:  #46ba43;
-    font-weight: 800;
-    font-size: 40px;
-    padding-left: 5vw;
-}
 .divLogoParrafos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .pLogoUno{
     color:  #1b225f;
     font-weight: 500;
     font-size: 25px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 0;
+    padding-right: 0;
 }
 .pLogoDos{
     color:  #1b225f;
     font-weight: 500;
     font-size: 25px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 5vw;
 }
 .imgLogo{
