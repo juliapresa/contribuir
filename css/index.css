@@ -216,6 +216,24 @@ body {
   text-decoration:underline;
   color: #46ba43;
 }
+.info-btn {
+  display: none; /* Oculto en escritorio */
+  margin-top: 10px;
+  background-color: #1b225f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 4vw;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.info-btn:hover {
+  background-color: #46ba43;
+}
+
+
 
 /* Mobile (versión vertical) */
 @media (max-width: 768px) {
@@ -250,7 +268,7 @@ body {
   position: relative;
   color: #1b225f;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 6vw;
   transition: color 0.3s;
 }
 
@@ -305,5 +323,32 @@ body {
 
   .brace {
     font-size: 32px;
+  }
+    .info-btn {
+    display: inline-block; /* Solo en mobile */
+  }
+  .rojo{
+  color: #ba6543;
+  margin-bottom: 10px;
+  font-size: 5vw;
+}
+.verde{
+  color:  #46ba43;
+  margin-bottom: 10px;
+  font-size: 5vw;
+}
+
+  /* Desactivar hover en mobile */
+  .timeline-content:hover p {
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0;
+  }
+
+  /* Mostrar p cuando está activo */
+  .timeline-content.active p {
+    opacity: 1;
+    max-height: 500px;
+    margin-top: 10px;
   }
 }

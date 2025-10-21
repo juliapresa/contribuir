@@ -21,6 +21,16 @@ items.forEach(item => observer.observe(item));
       });
     });
   }
+  // Botón "+ info" en móvil
+document.querySelectorAll(".info-btn").forEach(btn => {
+  btn.addEventListener("click", e => {
+    e.stopPropagation(); // evita conflicto con el link
+    const content = e.target.closest(".timeline-content");
+    content.classList.toggle("active");
+    btn.textContent = content.classList.contains("active") ? "− info" : "+ info";
+  });
+});
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
