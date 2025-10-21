@@ -324,7 +324,7 @@ main{
   position: relative;
   color: #1b225f;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 5vw;
   transition: color 0.3s;
 }
 
@@ -352,7 +352,7 @@ main{
 .pObjetivo{
     color:  #ffffff;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 5vw;
     padding-left: 9vw;
     padding-right: 9vw;
     padding-bottom: 5vh;
@@ -367,7 +367,7 @@ main{
 
   .question-card {
     flex: 0 1 90%;   /* ocupa todo el ancho */
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 15px 18px;
     height: 70px;      /* altura fija para todas las cards */
     min-height: 0;     /* sobreescribimos min-height */
@@ -383,7 +383,7 @@ main{
 .pEquipo{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 5vw;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 10vw;
@@ -392,7 +392,7 @@ main{
 .tituloEquipo{
     color:  #46ba43;
     font-weight: 800;
-    font-size: 8vw;
+    font-size: 9vw;
 }
 
 .divCards{
@@ -428,19 +428,19 @@ main{
 }
 
 .card-title {
-  font-size: 5vw;
+  font-size: 6vw;
   color:  #1b225f;
   margin-bottom: 5px;
 }
 
 .card-text {
-  font-size: 4vw;
+  font-size: 5vw;
   color:  #1b225f;
   margin-bottom: 15px;
 }
 
 .extra-info {
-  font-size: 3vw;
+  font-size: 4vw;
   color:  #1b225f;
   line-height: 1.4;
   display: none;
@@ -454,7 +454,7 @@ main{
   padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 3vw;
+  font-size: 4vw;
   transition: background-color 0.3s;
   margin-bottom: 2%;
 }
@@ -471,7 +471,7 @@ main{
 .tituloLogo{
   color:  #46ba43;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 7vw;
   padding-left: 0;
 }
 .divParrafosyLogo{
@@ -489,14 +489,14 @@ main{
 .pLogoUno{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 5vw;
     padding-left: 0;
     padding-right: 0;
 }
 .pLogoDos{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 5vw;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 5vw;
