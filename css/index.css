@@ -308,7 +308,7 @@ body {
   }
 
   .timeline-content {
-    width: calc(100% - 60px);
+    width: calc(100% - 10px);
   }
   .timeline-periods {
     flex-direction: column;
