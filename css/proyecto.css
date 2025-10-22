@@ -503,7 +503,7 @@ main{
 }
 .imgLogo{
   width: 60vw;
-  height: 40vh;
+  height: auto;
   padding-right: 0;
 }
 }
