@@ -3,6 +3,7 @@ body {
   font-family: "Monserrat", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .navbar {
@@ -13,7 +14,7 @@ body {
   gap: 20px;
   background-color: #ffffff;
   padding: 15px 0;
-  width: 100%;
+  width: 100vw;
   /* position: fixed; */
 }
 
@@ -282,12 +283,14 @@ body {
   font-family: "Monserrat", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
+  width: 100vw;
 }
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 /* navbar */
@@ -299,6 +302,7 @@ main{
     position: relative;
     margin-top: 2%;
     margin-bottom: 2%;
+    width: 100vw;
   }
 
   .nav-top {
@@ -306,7 +310,7 @@ main{
     justify-content: center; /* centra el logo */
     align-items: center;
     position: relative; /* contenedor relativo para el hamburger */
-    width: 100%;
+    width: 100vw;
     padding-top: 10px; /* separa del borde superior */
     padding-bottom: 10px;
   }
@@ -368,6 +372,7 @@ main{
   .nav-links.active {
     display: flex;
     margin-top: 1%;
+    width: 100vw;
   }
 
 
@@ -456,7 +461,7 @@ main{
 
 .card-img {
   width: 40vw;
-  height: 25vh;
+  height: 22vh;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;

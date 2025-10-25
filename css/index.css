@@ -238,6 +238,22 @@ body {
 
   /* navbar */
 @media screen and (max-width: 768px) {
+
+body {
+  margin: 0;
+  font-family: "Monserrat", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navbar */
+
   .navbar {
     flex-direction: column;
     align-items: stretch;
