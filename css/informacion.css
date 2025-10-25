@@ -22,7 +22,6 @@ body {
   height: auto;
 }
 
-/* Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -54,7 +53,6 @@ body {
   width: 100%;
 }
 
-/* Hamburguesa */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -82,11 +80,10 @@ body {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1b225f; /* azul oscuro */
+  color: #1b225f;
   font-weight: 700;
 }
 
-/* ✅ Dos por fila iguales */
 .documents-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -100,7 +97,6 @@ body {
   }
 }
 
-/* 💚💙 Tarjetas uniformes */
 .document-card {
   background-color: #1b225f;
   border-radius: 18px;
@@ -113,7 +109,7 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 520px;
-  min-height: 140px; /* 👈 mismo alto para todas */
+  min-height: 140px;
 }
 
 .document-card:hover {
@@ -124,13 +120,13 @@ body {
 .document-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color:  #46ba43;
+  color:  #ffffff;
   margin-bottom: 0.4rem;
 }
 
 .document-desc {
   font-size: 1rem;
-  color:  #76da73;
+  color:  #ffffff;
   margin-bottom: 1.3rem;
   flex-grow: 1;
 }

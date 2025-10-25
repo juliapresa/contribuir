@@ -78,7 +78,7 @@ body {
 /* contenedor */
 .press-section {
   background: #ffffff;
-  color: #46ba43;
+  color: #ffffff;
   padding: 60px 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -124,8 +124,8 @@ body {
 
 .press-card-body { display:flex; flex-direction:column; gap:6px; }
 
-.press-source { color: #76da73; font-weight:700; display:block; }
-.press-title  { color: #46ba43; font-weight:700; font-size:15px; display:block; margin-top:4px; }
+.press-source { color: #ffffff; font-weight:700; display:block; }
+.press-title  { color: #ffffff; font-weight:700; font-size:15px; display:block; margin-top:4px; }
 
 .read-link {
   color: #76da73;
