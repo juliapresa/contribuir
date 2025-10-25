@@ -10,6 +10,7 @@ cards.forEach(card => {
     button.textContent = isVisible ? "Ver más" : "Ver menos";
   });
 });
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
