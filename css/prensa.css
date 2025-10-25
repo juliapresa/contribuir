@@ -78,7 +78,7 @@ body {
 /* contenedor */
 .press-section {
   background: #ffffff;
-  color: #1b225f;
+  color: #46ba43;
   padding: 60px 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -109,7 +109,7 @@ body {
 
 /* cards */
 .press-card, .video-card {
-  background: #fff;
+  background: #1b225f;
   border-radius: 12px;
   box-shadow: 0 6px 22px rgba(55,46,121,0.06);
   padding: 14px;
@@ -124,8 +124,8 @@ body {
 
 .press-card-body { display:flex; flex-direction:column; gap:6px; }
 
-.press-source { color: #372e79; font-weight:700; display:block; }
-.press-title  { color: #1b225f; font-weight:700; font-size:15px; display:block; margin-top:4px; }
+.press-source { color: #76da73; font-weight:700; display:block; }
+.press-title  { color: #46ba43; font-weight:700; font-size:15px; display:block; margin-top:4px; }
 
 .read-link {
   color: #76da73;
@@ -145,7 +145,7 @@ body {
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #46ba43;
   transition: transform 0.3s ease;
 }
