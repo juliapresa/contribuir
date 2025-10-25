@@ -70,6 +70,8 @@ body {
   border-radius: 2px;
 }
 
+/* main */
+
 .documents-section {
   padding: 4rem 2rem;
   background-color: #ffffff;
@@ -182,12 +184,6 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 768px){
 
-body {
-  margin: 0;
-  font-family: "Monserrat", sans-serif;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
 main{
   display: flex;
   flex-direction: column;
@@ -200,7 +196,6 @@ main{
   .navbar {
     flex-direction: column;
     align-items: stretch;
-    padding: 10px 15px;
     position: relative;
     margin-top: 2%;
   }
@@ -275,4 +270,18 @@ main{
   }
 
 /* main */
+.document-card {
+  background-color: #1b225f;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(55, 46, 121, 0.1);
+  padding: 2rem;
+  border-left: 6px solid #46ba43;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 520px;
+  min-height: 140px;
+}
 }
