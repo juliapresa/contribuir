@@ -86,7 +86,9 @@ body {
 .pObjetivo{
     color:  #ffffff;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.8vw;
+    text-align: justify;
+    hyphens: auto;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 5vh;
@@ -98,7 +100,7 @@ body {
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
-  justify-content: center; /* centra las filas */
+  justify-content: center;
 }
 
 .question-card {
@@ -114,12 +116,9 @@ body {
   flex: 0 1 48%; /* mismo ancho para todas */
   box-sizing: border-box;
   text-align: center;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* altura uniforme */
   min-height: 90px;
 }
 
@@ -140,15 +139,17 @@ body {
 .pEquipo{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.8vw;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 5vw;
+    text-align: justify;
+    hyphens: auto;
 }
 .tituloEquipo{
     color:  #46ba43;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 3.8vw;
 }
 
 .divCards{
@@ -239,7 +240,7 @@ body {
 .tituloLogo{
     color:  #46ba43;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 2vw;
     padding-left: 10vw;
 }
 .divLogoParrafos{
@@ -251,18 +252,20 @@ body {
 .pLogoUno{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.3vw;
     padding-left: 10vw;
     padding-right: 10vw;
     text-align: justify;
+    hyphens: auto;
 }
 .pLogoDos{
     color:  #1b225f;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.3vw;
     padding-right: 10vw;
     padding-left: 10vw;
     text-align: justify;
+    hyphens: auto;
 }
 .divParrafosyLogo{
   display: flex;
@@ -389,23 +392,24 @@ main{
     width: 100vw;
     height: fit-content;
     background-color:  #1b225f;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
     text-align: justify;
 }
 .pObjetivo{
     color:  #ffffff;
     font-weight: 500;
     font-size: 5vw;
-    padding-left: 9vw;
-    padding-right: 9vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     padding-bottom: 5vh;
+    padding-top: 10vh;
 }
   .questions-container {
     flex-direction: row; /* seguimos en fila para usar gap */
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    padding: 10px;
+    
   }
 
   .question-card {
