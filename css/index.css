@@ -318,8 +318,8 @@ main{
     height: 23px;
     cursor: pointer;
     position: absolute;
-    left: 15px;  /* separación del borde izquierdo */
-    top: 50%;    /* centra verticalmente respecto al nav-top */
+    left: 15px;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 2;
   }
@@ -399,7 +399,7 @@ main{
     min-height: 0;   
   }
 
-    .video-grid {
+  .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
     width: 80vw;
@@ -415,5 +415,14 @@ main{
 
   .read-link {
     font-size: 1rem;
+  }
+
+  .divBarra{
+    width: fit-content;
+    height: auto;
+  }
+  .barra{
+    width: 100vw;
+    height: 4.3vh;
   }
 }
