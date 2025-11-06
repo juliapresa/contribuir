@@ -1,14 +1,15 @@
+/* ==================== GENERAL ==================== */
 body {
   margin: 0;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   color:  #1b225f;
+  overflow-x: hidden;
 }
 
 p {
   line-height: 1.5;
 }
-
 /* header */
 
 .navbar {

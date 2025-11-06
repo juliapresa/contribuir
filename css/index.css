@@ -1,6 +1,7 @@
+/* ==================== GENERAL ==================== */
 body {
   margin: 0;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   color:  #1b225f;
   overflow-x: hidden;
@@ -11,7 +12,6 @@ p {
 }
 
 /* header */
-
 .navbar {
   display: flex;
   flex-direction: column;
@@ -21,7 +21,6 @@ p {
   background-color: #ffffff;
   padding: 15px 0;
   width: 100%;
-  /* position: fixed; */
 }
 
 .logo {
@@ -59,6 +58,7 @@ p {
 .nav-links a:hover::after {
   width: 100%;
 }
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -78,55 +78,54 @@ p {
 }
 
 /* main */
-
-/* proyecto */
-
 .divObjetivo{
+    width: 100%;
+    background-color: #1b225f;
+    padding: 10vh 5vw 80px 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: fit-content;
-    background-color:  #1b225f;
-    padding-bottom: 15vh;
 }
+
 .pObjetivo{
-    color:  #ffffff;
+    color: #ffffff;
     font-weight: 500;
-    font-size: 1.8vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 14vh;
-    padding-bottom: 8vh;
+    font-size: clamp(16px, 1.5vw, 22px); /* adaptable a pantallas */
+    line-height: 1.6;
+    max-width: 1000px; /* controla ancho de lectura */
+    text-align: center;
+    padding-top: 8vh; /* antes 14vh */
+    padding-bottom: 4vh; /* antes 8vh */
+    margin-top: 0;
 }
+
 .questions-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
   max-width: 1000px;
   margin: 0 auto;
   justify-content: center;
+  gap: 18px;
 }
 
 .question-card {
   background-color: #ffffff;
-  padding: 18px 20px;
+  padding: 16px 18px;
+  min-height: 80px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 700;
   color: #46ba43;
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: default;
-  flex: 0 1 48%; /* mismo ancho para todas */
-  box-sizing: border-box;
+  flex: 0 1 45%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90px;
 }
+
 
 .question-card:hover {
   transform: translateY(-3px);
@@ -135,62 +134,68 @@ p {
 
 .divBarra{
     width: fit-content;
-    height: auto;
+    height: fit-content;
 }
 .barra{
     width: 100vw;
-    height: 3.6vh;
+    height: 4vh;
 }
 
-
-
+/* ==================== VIDEO SECTION ==================== */
 .video-section {
-  padding: 60px 20px;
+  padding: 50px 20px 80px 20px; /* top 50px, bottom 80px */
   background-color: #ffffff;
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* más angostos tipo reels */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* filas de 3 videos */
+  gap: 20px 15px; /* fila 20px, columna 15px */
   justify-items: center;
 }
 
-.video-card {
-  background: #2a2f71;
+/* TARJETAS REELS */
+.video-card,
+.video-card-local {
+  background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 300px;  /* ancho máximo tipo reel */
+  max-width: 300px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  height: fit-content;
 }
 
-.video-card:hover {
+.video-card:hover,
+.video-card-local:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
 }
 
 .video-thumb {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  aspect-ratio: 9/16; /* altura mayor que ancho, formato vertical tipo reels */
-}
-
-.video-thumb iframe {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: none;
-}
-
-.video-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* recorta la imagen para llenar el contenedor */
-  display: block;
+  aspect-ratio: 9/16;
   border-radius: 8px;
+}
+
+.video-thumb img,
+.video-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.video-card:hover .video-thumb img,
+.video-card-local:hover .video-thumb video {
+  transform: scale(1.05); /* zoom delicado al hover */
 }
 
 .play-btn {
@@ -208,8 +213,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: background 0.3s;
+  z-index: 10;
 }
 
 .play-btn:hover {
@@ -217,15 +222,15 @@ p {
 }
 
 .video-meta {
-  padding: 15px;
+  padding: 10px; /* un poco más compacto */
   text-align: center;
 }
 
 .video-meta strong {
   display: block;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 900;
+  color: #2a2f71;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -243,10 +248,11 @@ p {
 }
 
 .read-link:hover {
-  color:  #cbf3ca;
-  border-color:  #cbf3ca;
+  color: #cbf3ca;
+  border-color: #cbf3ca;
 }
 
+/* Animaciones */
 .fade-item {
   opacity: 0;
   transform: translateY(30px);
@@ -261,25 +267,28 @@ p {
   }
 }
 
+/* Mantener tamaño de thumbnails de YouTube */
+.video-card iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
 
 
+/* ==================== RESPONSIVE ==================== */
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
 
-body {
-  margin: 0;
-  font-family: "Monserrat", sans-serif;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* header */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .navbar {
     flex-direction: column;
@@ -292,11 +301,11 @@ main{
 
   .nav-top {
     display: flex;
-    justify-content: center; /* centra el logo */
+    justify-content: center;
     align-items: center;
-    position: relative; /* contenedor relativo para el hamburger */
+    position: relative;
     width: 100%;
-    padding-top: 10px; /* separa del borde superior */
+    padding-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -359,45 +368,28 @@ main{
     margin-top: 3%;
   }
 
-  /* main */
-
-  /* proyecto */
-
   .divObjetivo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: fit-content;
-    background-color:  #1b225f;
-    padding-bottom: 10vh;
-    text-align: justify;
-}
-.pObjetivo{
-    color:  #ffffff;
-    font-weight: 500;
-    font-size: 5vw;
-    padding-top: 12vh;
-    padding-bottom: 8vh;
     padding-left: 5vw;      
     padding-right: 5vw;
-}
+  }
+
+  .pObjetivo{
+    font-size: 5vw;
+  }
+  
   .questions-container {
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
-    
+    flex-direction: column;
+    align-items: center;
   }
 
   .question-card {
-    flex: 0 1 90%;  
-    font-size: 4vw;
-    padding: 15px 18px;
-    height: 70px; 
-    min-height: 0;   
+    flex: 0 1 90%;
+    font-size: 16px;
+    min-height: 70px;
+    width: 90%;
   }
+
 
   .video-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -417,12 +409,7 @@ main{
     font-size: 1rem;
   }
 
-  .divBarra{
-    width: fit-content;
-    height: auto;
-  }
   .barra{
-    width: 100vw;
     height: 4.3vh;
   }
 }
